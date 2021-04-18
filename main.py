@@ -38,8 +38,31 @@ print(f"This is password generator Easy-level: {password}")
 #print(f"This is password generator Easy-level: \n{karakter1}{karakter2}{karakter3}")
 
 #Hard Level
+#Membuat perulangan random sebanyak request di input
+password_list = []
+for letter in range(nr_letters):
+  l = random.choice(letters)
+  password_list += l
+# print(karakter1)
 
+for symbol in range(nr_symbols):
+ o = random.choice(symbols)
+ password_list += o
+# print(karakter2)
 
+for number in range(nr_numbers):
+ n =random.choice(numbers)
+ password_list += n
+# print(karakter3)
+print(password_list)
+random.shuffle(password_list)
+print(password_list)
+
+hard_password=""
+for password_final in password_list:
+  hard_password += password_final
+
+print(f"This is the hard password : {hard_password}")
 
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
