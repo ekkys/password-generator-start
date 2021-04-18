@@ -16,25 +16,26 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 import random
 
 #Membuat perulangan random sebanyak request di input
-karakter1=""
+password=""
 for letter in range(nr_letters):
   l = random.choice(letters)
-  karakter1 += l
+  password += l
 # print(karakter1)
 
-karakter2= ""
 for symbol in range(nr_symbols):
  o = random.choice(symbols)
- karakter2 += o
+ password += o
 # print(karakter2)
 
-karakter3=""
+
 for number in range(nr_numbers):
  n =random.choice(numbers)
- karakter3 += n
+ password += n
 # print(karakter3)
 
-print(f"This is password generator Easy-level: \n{karakter1}{karakter2}{karakter3}")
+print(f"This is password generator Easy-level: {password}")
+
+#print(f"This is password generator Easy-level: \n{karakter1}{karakter2}{karakter3}")
 
 #Hard Level
 
